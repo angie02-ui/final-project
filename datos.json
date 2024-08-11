@@ -1,0 +1,22 @@
+{
+  "compras": {
+    "ana_lopez": ["lego_star_wars", "barbie_dream_house"],
+    "juan_perez": ["hot_wheels_track", "action_figure_superhero"],
+    "maria_garcia": ["dollhouse", "playdoh_set", "puzzle_1000_pieces"],
+    "pedro_sanchez": ["lego_city", "remote_control_car"],
+    "lucia_martinez": ["stuffed_animal_bear", "board_game_monopoly"]
+  },
+  "sugerencias": {
+    "lego_star_wars": ["lego_city", "action_figure_superhero"],
+    "barbie_dream_house": ["barbie_clothes_set", "dollhouse"],
+    "hot_wheels_track": ["remote_control_car", "action_figure_superhero"],
+    "action_figure_superhero": ["lego_star_wars", "hot_wheels_track"],
+    "dollhouse": ["barbie_dream_house", "playdoh_set"],
+    "playdoh_set": ["dollhouse", "puzzle_1000_pieces"],
+    "puzzle_1000_pieces": ["playdoh_set", "board_game_monopoly"],
+    "lego_city": ["lego_star_wars", "remote_control_car"],
+    "remote_control_car": ["lego_city", "hot_wheels_track"],
+    "stuffed_animal_bear": ["board_game_monopoly", "lego_star_wars"],
+    "board_game_monopoly": ["stuffed_animal_bear", "puzzle_1000_pieces"]
+  }
+}

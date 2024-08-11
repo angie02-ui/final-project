@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones de Juguetes</title>
+</head>
+<body>
+    <h1>Recomendaciones de Juguetes</h1>
+    <form action="/recomendaciones" method="post">
+        <label for="cliente">Introduce tu identificador:</label>
+        <input type="text" id="cliente" name="cliente" required>
+        <button type="submit">Obtener Recomendaciones</button>
+    </form>
+
+    {% if mensaje %}
+        <p>{{ mensaje }}</p>
+    {% elif cliente %}
+        <h2>Recomendaciones para {{ cliente }}:</h2>
+        <ul>
+            {% for juguete in recomendaciones %}
+                <li>{{ juguete }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
